@@ -6,6 +6,7 @@
 \usepackage{amsmath, amssymb, amsthm, amsfonts}
 
 \newcommand{\R}{\mathbb{R}}
+\newcommand{\Z}{\mathbb{Z}}
 \newcommand{\N}{\mathbb{N}}
 \newcommand{\Q}{\mathbb{Q}}
 
@@ -25,6 +26,148 @@
 	\item Due to housing issue, I might have to miss the first day.
 	\item Due to this problem, I will be manually studying for about 5 to 6 subsections using the notes given by the instructor.
 \end{itemize}
+
+
+\noindent \textbf{Short notes in class}
+
+\begin{itemize}
+	\item Part 1: real calculus.
+	\item Part 2: linear algebra.
+	\item Part 3: probability and optimization.
+	\item Each part lasts two weeks.
+	\item HW assignment every week but not graded.
+	\item Friday: Quiz (2 hours).
+	\item Only thing that matters is math camp exam: Mostly everyone passes if one takes classes.
+	\item Communication done through canvas.
+	\item Part 1 deals with mathematical logic, spaces (metrics, topology), correspondence.
+\end{itemize}
+
+\textbf{Some notation}\\
+
+$\N$: Natural numbers.
+
+$\Z$: Integer numbers.
+
+$\Q$: Rational numbers.
+
+$\R$: Real numbers.\\
+
+\textbf{Binary relation}\\
+
+Binary relation $R$ on set  $X$ is a subset of  $X\times X$.
+
+\begin{enumerate}
+	\item $R$ is reflexive if:  $\forall x \in X, \, xRx$
+	\item $R$ is symmetric if:  $\forall x, y \in X, \, xRy \implies yRx$
+	\item $R$ is transitive if:  $\forall x, y \in X, \, xRy, yRz \implies xRz$
+\end{enumerate}
+
+\noindent \textbf{Def:} A binary relation is an equivalence relation if it is reflexive, symmetric and transitive. We denote this as $x\sim y.$\\
+
+\noindent \textbf{Def:} $R$ is antisymmetric if  $\forall x, y \in  X, xRy \text{ and }  yRx \implies x=y.$\\
+
+\noindent \textbf{Def:} $R$ is partial order on $X$ if it is reflexive, antisymmetric and transitive.\\ 
+
+\noindent \textbf{Def:} $x, y \in X$ are comparable if $xRy \text{ or } yRx.$\\
+
+\noindent \textbf{Def:} A partial order $R$ is a total order if every two elements are comparable.\\
+
+\noindent \textbf{Def:} $f: X \to Y$ is an injection if $\forall a, b \in X, a \neq b \implies f(a)\neq f(b).$\\ 
+
+\noindent \textbf{Def:} $f: X \to Y$ is an surjection if $Y=f(X)=\{ y \in Y | \exists x \in X: f(x)=y\}.$\\
+
+\noindent \textbf{Def:} $f: X \to Y$ is called bijection if it is both an injection and surjection.\\ 
+
+\noindent \textbf{Fact:} $f: X \to Y$ is an injection if $\forall y \in Y$, $f^{-1}\left( \{y\} \right) $ has no more than one element.\\ 
+
+\noindent \textbf{Fact:} $f: X \to Y$ is an surjection if $\forall y \in Y$, $f^{-1}\left( \{y\} \right) $ has at least one element.\\ 
+
+\noindent \textbf{Fact:} $f: X \to Y$ is an bijection if $\forall y \in Y$, \#$f^{-1}\left( \{y\} \right)=1.$\\ 
+
+\noindent \textbf{Fact:} $f$ have inverse $\iff$ $f$ is a bijection.
+\begin{proof}
+	i. $f^{-1}$ exists $\implies$ $f$ is a bijection: $f^{-1}\left( \{y\} \right) &= \{ f^{-1}\left( y \right) \} \\$. Assume not $\implies \exists a \in f^{-1}\left( \{y\} \right) \, s.t. a \neq f^{-1}\left( y \right).$ But $f(a)=y \implies f^{-1}\left( f(a) \right) = f^{-1}\left( y \right).$
+
+	ii. $f$ is a bijection $\implies$ $f^{-1}$ exists. Construct $g$ s.t. $g(y)$ is the only element of $f^{-1}\left( \{y\} \right)$. $f \cdot g: f(g(y)) = y; \, g \cdot f: g(f(x))=y$.
+\end{proof}\\
+
+\noindent \textbf{Fact:} Bijection between two finite sets exists only if $\#A &= \#B.$ \\
+
+\noindent \textbf{Def:} $A$ and $B$ have equal cardinality if there is a bijection $f: A \to B$.\\
+
+\noindent \textbf{Fact:} Having the same cardinality is an equivalence relation.
+\begin{proof}
+	i. reflexivity: $id_{A}$ is a bijection.
+
+	ii. symmetry: $f: A \to B$ is a bijection $\implies$ $f^{-1}$ is also a bijection.
+
+	iii. transitivity: $f:A \to B$ and $g:B \to C$ is bijection, then $g \cdot f$ is also bijection.
+\end{proof}
+
+\noindent \textbf{Def:} $A$ is denumerable if $\# A = \#\N$. (countably infinite) $A$ is countable if it is finite or denumerable. $A$ is uncountable if it is not countable.\\
+
+\noindent \textbf{Ex:} Show $\N \times \N$ is denumerable.
+\begin{proof}
+	(0,0), (0,1) \ldots\\
+	\indent \indent (1,0), (1,1) \ldots\\
+	Just go diagonal. Then it will get you a mapping that is bijection.\\
+
+	$f(m,n) = \frac{(m+n)(m+n+1)}{2}+m$.
+\end{proof}
+
+\noindent \textbf{Corr:} $\forall k > 0$, $\N^{k}$ is denumerable.
+\begin{proof}
+	later.
+\end{proof}
+
+\noindent \textbf{Prob:} Let $A \subset B$. $A$ is infinite and $B$ is denumerable. Then $A$ is denumerable.
+\begin{proof}
+	$f: \N \to B$. $f^{-1}(A) \subset \N$ Later solve it. 
+\end{proof}
+
+\noindent \textbf{Corr:} Let $f: A \to B$ be a surjection. If $A$ is denumerable and $B$ is infinite, then $B$ is denumerable.
+\begin{proof}
+	Later.
+\end{proof}
+
+\noindent \textbf{Def:} We say $\# A \le \#B$ if there is an injection $f: A \to B$. If there is no bijection from $A$ to $B$, we can say that the cardinality of $A$ is strictly smaller than that of $B$.\\
+
+\noindent \textbf{Prob:} Prove that $\{0,1\}^{\N}$ is uncountable.
+\begin{proof}
+	Later. But just use the fact that if denumerable, its element can be written as a sequence.
+\end{proof}
+
+\noindent \textbf{Def:} The set of all subsets of $A$ is called power set of $A$ and is noted as $2^{A}$.\\
+
+\noindent \textbf{Prob:} If $A$ is finite $\implies \# 2^{A} = 2^{\# A}$.
+\begin{proof}
+	Later.
+\end{proof}
+
+\noindent \textbf{Theorem} For every $A, \#2^{A} > \#A$.
+\begin{proof}
+	Injection: $x \to \{x\}$ from $A$ to $2^{A}$.
+
+	Suppose there is a bijection $f: A \to  2^{A}$. $B = \{x \in A | x not\in f(x)\}=2^{A}. \implies \exists y \in A s.t. f(y)=B.$ 
+
+	1. $y \in B \implies y not \in f(y)=B$ by def of $B$.
+
+	2. $y not \in B \implies y \in f(y) =B$ by def of $B$.
+
+	This is contradiction. Thus done.
+\end{proof}
+
+\noindent \textbf{Prob:} $\# \R = \# 2^{\N}$.
+\begin{proof}
+	We show that $[0,1] = 2^{\N}$ in cardinality.
+\end{proof}
+
+\noindent \textbf{Prob:} $\forall n \in \N, \R^{n} \sim \R$.
+\begin{proof}
+	Later.
+\end{proof}
+
+\noindent \textbf{Theorem} If $\# A \le \# B$ and vice versa, then the cardinality for both set is same.\\
 
 \noindent \textbf{Some Exercises}\\
 
