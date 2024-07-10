@@ -202,10 +202,191 @@ Binary relation $R$ on set  $X$ is a subset of  $X\times X$.
 \end{proof}
 
 
+\section{Day 2}
+
+\textbf{PS1 review}\\
+
+PS 1.
+\begin{proof}
+	This is false. Let $p(x,y) \implies x+y=5$.
+\end{proof}
+
+PS 2.
+\begin{proof}
+	Obvious.
+\end{proof}
+
+PS 3.
+\begin{proof}
+	(i) $xRy \iff x \neq y.$
+
+	(ii) $xRy \iff x < y+1.$
+
+	(iii) $xRy \iff x>y.$
+\end{proof}
+
+PS 4.
+\begin{proof}
+	Obvious.
+\end{proof}
+
+PS extra. Set of all ftns on $\R$ $fRg$ if $\forall x \in \R \, f(x) \le g(x).$ Is it a total order, partial order or not an order?
+\begin{proof}
+	(1) reflexive: $fRf$ 
+
+	(2) transitive: $fRg \, gRh \impliesfRh.$
+
+	(3) antisymmetric.
+\end{proof}
+
+PS 5.
+\begin{proof}
+	No.
+\end{proof}
+
+PS 6.
+\begin{proof}
+	Check my notes in github.	
+\end{proof}
+
+PS 7. 
+\begin{proof}
+	We know that $\N \times \N \sim \N$. We just need to show there is bijection between $\Q \times \N$ and $\N \times \N$. We use the fact there there is bijection from rational number to natural number.
+\end{proof}
+
+PS 8.
+\begin{proof}
+	(iii) Try to use that $\left( 0, 1 \right) \times \N \to \R$ is injection and there is bijection from $\left( 0,1 \right) $ to real number.
+
+	(iv) set of all finite seq of $\N = \cup_{n \in \N} \{ \text{all seq of length n}\}$.
+\end{proof}
+
+PS 9.
+\begin{proof}
+	Later.
+\end{proof}
+
+PS 10.
+\begin{proof}
+	$X$ is set of a possible bijections from one countable set to another.
+
+	(i) Sps $A$ and $B$ have different cardinality $\implies$ zero.
+
+	(ii) If they have same cardinality $m$ : $m!$.
+
+	(iii) If they have same cardinality to  $\N$ : continuum.
+
+	Let $X$ be set of all bijections from natural number to natural number.
+
+	Need to show that $f: 2^{\N} \to X$ and vice versa is injection.
+\end{proof}
+
+PS 11.
+\begin{proof}
+	No. 
+
+	i. $A$ is finite. Then $2^{A}$ is finite.
+
+	ii. If $A$ is infinite. $A\sim \N \implies \# 2^{A} > \N$
+\end{proof}
+
+PS 12.
+\begin{proof}
+	i. $X$ is finite. Then $X = \{0, 1, \ldots, n\}$.
+	Later. Just remember to move them or shift them.
+\end{proof}
+
+\textbf{Short notes in class}\\
+
+\textbf{Def:} Vector space over $R$ is a nonempty set $V$ on which two binary operations (scalar multiplication and vector addition is defined). It has following properties:
+\begin{enumerate}
+	\item $u + (v+w)=(u+v)+w.$
+	\item $u+w=w+u.$
+	\item $\exists 0 \in V s.t.\, u+0=u.$ 
+	\item $\exists -u \in V s.t. \, u+(-u)=0.$
+	\item $\lambda (\mu v) = (\lambda \mu) v.$
+	\item  $1 \cdot u = u.$
+	\item $\left( \lambda + \mu \right) u = \lambda u + \mu u.$
+	\item $\lambda (u+v) = \lambda u + \lambda v.$
+\end{enumerate}
+
+\textbf{Def:} $V$ is a v.s. Then norm can be defined as $ \mid  \mid  \cdot  \mid  \mid : V \to \R_+$.
+\begin{enumerate}
+	\item $ \mid  \mid u  \mid  \mid = 0 \iff v=0.$
+	\item  $\mid \alpha v  \mid  \mid =  \mid \alpha  \mid  \cdot \mid  \mid v  \mid  \mid .$ 
+	\item $ \mid  \mid u+v  \mid  \mid  \le   \mid  \mid  v \mid  \mid +  \mid  \mid u  \mid  \mid .$ 
+\end{enumerate}
+
+\textbf{Ex.} Let $X = \left( x_1, \ldots , x_{n} \right) \in \R^{n}.$ We can define norm as $ \mid  \mid x \mid  \mid = \sqrt{\sum_{i=1}^{n} X_{i}^{2}}.$\\
+
+\textbf{Note.} Remember that there are many ways to construct norms.\\
+
+\textbf{Def:} A metric on a set $X$ is a function 
+\[
+d: X \times X \to \R_+, \forall x,y \in X
+.\] 
+\begin{enumerate}
+	\item $d(x,y)=d(y,x).$
+	\item $d(x,y)=0 \iff x=y.$
+	\item $d(x,z) \le  d(x,y) + d(y,z).$
+\end{enumerate}
 
 
+\textbf{Def:} A metric on a set $X$ is a function
+\[
+d: X \times X \to \R_+
+.\] 
+
+s.t. $\forall x, y \in X,$
+\begin{enumerate}
+	\item $d(x,y) = d(y,x).$
+        \item $d(x,y)=0 \iff x=y.$
+	\item $d(x,y) \le d(x,y) + d(y,z).$
+\end{enumerate}
+
+\textbf{Def:} A pair $(X,d)$ is called a metric space.\\
+
+\textbf{Ex:} Trivial metric is  $d(x,y)$ where it is 0 if $x=y$ and 1 otherwise.\\
+
+\textbf{Ex:} Normed vector space  $(V,  \mid  \mid \cdot  \mid  \mid )$. In this case, $d(x,y) =  \mid  \mid x-y \mid  \mid $ induces a metric on it.\\
+
+\textbf{Def:} A sequence is basically a function $f: \N \to X$ and we write it as $(x_n) \in X.$\\
+
+\textbf{Def:} A cauchy sequence is a sequence such that: $\forall \varepsilon >0, \exists N, s.t. \, \forall n, m > N, d(x_n, x_m)< \varepsilon.$\\
+
+\textbf{Def:} A sequence $(x_n)$ converges to $x$ if 
+\[
+\forall \varepsilon > 0, \exists N: \forall i > N, d(x_n, x) < \varepsilon
+.\] 
+
+We denote this as $X_n \to x; \, \lim_{n \to \infty}x_n = x.$\\
+
+\textbf{Note:} The convergence is unique. Assume it is not unique and the sequence converge to x and y. Then take $\varepsilon = \frac{d(x,y)}{3}$. There will be some $N$ large enough for some $i$ s.t. $d(x_i, x) < \varepsilon, d(x_i, y) < \varepsilon).$ This implies that  $d(x,y) < 2\varepsilon.$ But this means  $d(x,y) < 2 \varepsilon = \frac{2}{3} d(x,y) \implies \text{contradiction}.$\\
+
+\textbf{Prop:} Every converging sequence is a cauchy sequence. But note that vice versa does not hold generally. Think about $x_n = \frac{1}{n}$ in (0,1).\\
+
+\textbf{Theorem} In $\R$, every cauchy seq. converges.\\
+
+\textbf{Def:} $(X,d)$ is complete if any cauchy seq. converge (e.g. $\R, \R^{n}$ with euclidean metric).\\
+
+\textbf{Ex:} $\Q$ is not complete space. Take any seq. converging to square 2.\\
 
 
+\textbf{Prop:} $C\left( [a,b] \right) $ with sup metric is a complete space.
+\begin{proof}
+	Let $f_n$ be a cauchy seq. For $\forall x \in [a,b],  \mid f_n (x) - f_m (x)  \mid  \le  d(f_n, f_m) = \text{max}  \mid f_n (x) - f_m (x)  \mid . \implies \forall x \in [a,b], f_n$ is a cauchy seq. 
+
+	Define $f$ s.t. $\forall x \in [a,b], f(x) = \lim_{n \to \infty} f_n (X) \implies f_n \to f\ldots..$
+\end{proof}
+
+\textbf{Def:} Mapping $A:X \to X$ is a contraction if $\exists \lambda \in [0,1)$ s.t. $\forall x, y \in X$ $d\left( A(x), A(y) \right) \le  \lambda \cdot d(x,y)$.\\
+
+\textbf{Def:} $x \in X$ is a fixed point of $A: X \to X$ if $A(x)=x.$\\
+
+\textbf{Theorem (Banach fixed-point thm)} A is a contraction on complete  $(X,d)$. Then $A$ has unqiue fixed point $x^{*} \in X.$ \\
+
+
+\textbf{Bellman eq.} $V(x) = max_a \left( u(a,x) + \beta V(x') \right) $, $X' = g(a,x).$  $A:f \to max_a \left( u(a,x) + \beta f(x') \right) $.
 
 
 

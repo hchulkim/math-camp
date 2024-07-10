@@ -221,6 +221,7 @@ INPUT /home/hyoungchulkim/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/ecb
 INPUT /home/hyoungchulkim/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1440.600pk
 INPUT /home/hyoungchulkim/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1200.600pk
 INPUT /home/hyoungchulkim/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1728.600pk
+INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb
