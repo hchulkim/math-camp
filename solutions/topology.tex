@@ -1,0 +1,69 @@
+% --------------------------------------------------------------
+% This is all preamble stuff that you don't have to worry about.
+% Head down to where it says "Start here"
+% --------------------------------------------------------------
+ 
+\documentclass[12pt]{article}
+ 
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amsthm,amssymb,scrextend}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+
+\renewcommand{\qed}{\hfill$\blacksquare$}
+\let\newproof\proof
+\renewenvironment{proof}{\begin{addmargin}[1em]{0em}\begin{newproof}}{\end{newproof}\end{addmargin}\qed}
+ 
+\newenvironment{theorem}[2][Theorem]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{lemma}[2][Lemma]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{problem}[2][Problem]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{exercise}[2][Exercise]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{reflection}[2][Reflection]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{proposition}[2][Proposition]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+\newenvironment{corollary}[2][Corollary]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}\hskip \labelsep {\bfseries #2.}]}{\end{trivlist}}
+ 
+\begin{document}
+ 
+% --------------------------------------------------------------
+%                         Start here
+% --------------------------------------------------------------
+
+\title{Munkres Topology Solutions} % Title
+\author{Hyoungchul Kim}
+\date{\today} % Date for the report
+\maketitle % Inserts the title, author and date
+
+\tableofcontents
+
+\lhead{Topology}
+\chead{Hyoungchul Kim}
+\rhead{\today}
+
+\section{Section 12: Topological Spaces}
+
+No exercises here. Just read the text.
+
+\section{Section 13: Basis for a Topology}
+
+\begin{exercise}{12.1}
+\end{exercise}
+
+\begin{proof}
+	WTS $A = \bigcup_x U_x$. Then the proof is done since it is arbitrary union of open sets. 
+
+Let $x \in A.$ Then there  $\exists U_x$ s.t. $x \subset U_x \subset.$ Then this is provided easily. Conversely, Let $x \in \bigcup_{x} U_x.$ Then $x \in U_x$ for some $x$. Since we have by definition that $U_x \subset A$, this is also proved.
+\end{proof}
+
+\begin{exercise}{12.4}
+
+\end{exercise}
+
+
+\end{document}
